@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Bayesian">
+      <UniqueIdentifier>{9517ce39-7cb8-4cd2-a4eb-d52279278de2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Bayesian">
+      <UniqueIdentifier>{5c711dcb-49f5-49e0-a63a-668715fce256}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\BFGS">
+      <UniqueIdentifier>{67335ddf-cb30-4b07-a722-6e435e53ac16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\BFGS">
+      <UniqueIdentifier>{69ea39e5-ea66-4164-aca9-a25216af7086}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Bayesian\kdefog.h">
+      <Filter>头文件\Bayesian</Filter>
+    </ClInclude>
+    <ClInclude Include="Bayesian\kfmrf.h">
+      <Filter>头文件\Bayesian</Filter>
+    </ClInclude>
+    <ClInclude Include="Bayesian\kfunutils.h">
+      <Filter>头文件\Bayesian</Filter>
+    </ClInclude>
+    <ClInclude Include="Bayesian\kgrabwnd.h">
+      <Filter>头文件\Bayesian</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Library\LBFGSB\lbfgsb.h">
+      <Filter>头文件\BFGS</Filter>
+    </ClInclude>
+    <ClInclude Include="Bayesian\mpfit.h">
+      <Filter>头文件\Bayesian</Filter>
+    </ClInclude>
+    <ClInclude Include="klabel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mainwindow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_mainwindow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KRunBayesian.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KWorker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bayesiandialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_bayesiandialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KRunDarkChannal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Bayesian\lmcurve.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Bayesian\lmmin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KRunBCCR.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bccrdialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_bccrdialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CVPrj.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bayesian\kfmrf.cpp">
+      <Filter>源文件\Bayesian</Filter>
+    </ClCompile>
+    <ClCompile Include="Bayesian\main.cpp">
+      <Filter>源文件\Bayesian</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Library\LBFGSB\lbfgsb.c">
+      <Filter>源文件\BFGS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Library\LBFGSB\linesearch.c">
+      <Filter>源文件\BFGS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Library\LBFGSB\linpack.c">
+      <Filter>源文件\BFGS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Library\LBFGSB\miniCBLAS.c">
+      <Filter>源文件\BFGS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Library\LBFGSB\print.c">
+      <Filter>源文件\BFGS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Library\LBFGSB\subalgorithms.c">
+      <Filter>源文件\BFGS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Library\LBFGSB\timer.c">
+      <Filter>源文件\BFGS</Filter>
+    </ClCompile>
+    <ClCompile Include="Bayesian\mpfit.c">
+      <Filter>源文件\Bayesian</Filter>
+    </ClCompile>
+    <ClCompile Include="Bayesian\moc_kgrabwnd.cpp">
+      <Filter>源文件\Bayesian</Filter>
+    </ClCompile>
+    <ClCompile Include="dcp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="klabel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_mainwindow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_KRunBayesian.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_KWorker.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="bayesiandialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_bayesiandialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_klabel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_KRunDarkChannal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bayesian\lmcurve.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bayesian\lmmin.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_KRunBCCR.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="bccrdialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_bccrdialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

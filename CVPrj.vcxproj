@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{07BB65E7-6D81-4717-8502-0526975280D9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CVPrj</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\Library\OpenCV\include;..\Library\QT\include;..\Library\QT\include\QtWidgets;..\Library\QT\include\QtGui;..\Library\QT\include\QtCore;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Library\QT\lib;..\Library\OpenCV\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>..\Library\QT\lib;..\Library\OpenCV\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\Library\OpenCV\include;..\Library\QT\include;..\Library\QT\include\QtWidgets;..\Library\QT\include\QtCore;..\Library\QT\include\QtGui;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_world300d.lib;qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opencv_world300.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Library\LBFGSB\lbfgsb.h" />
+    <ClInclude Include="bayesiandialog.h" />
+    <ClInclude Include="Bayesian\kdefog.h" />
+    <ClInclude Include="Bayesian\kfmrf.h" />
+    <ClInclude Include="Bayesian\kfunutils.h" />
+    <ClInclude Include="Bayesian\kgrabwnd.h" />
+    <ClInclude Include="Bayesian\lmcurve.h" />
+    <ClInclude Include="Bayesian\lmmin.h" />
+    <ClInclude Include="Bayesian\mpfit.h" />
+    <ClInclude Include="bccrdialog.h" />
+    <ClInclude Include="klabel.h" />
+    <ClInclude Include="KRunBayesian.h" />
+    <ClInclude Include="KRunBCCR.h" />
+    <ClInclude Include="KRunDarkChannal.h" />
+    <ClInclude Include="KWorker.h" />
+    <ClInclude Include="mainwindow.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ui_bayesiandialog.h" />
+    <ClInclude Include="ui_bccrdialog.h" />
+    <ClInclude Include="ui_mainwindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Library\LBFGSB\lbfgsb.c" />
+    <ClCompile Include="..\Library\LBFGSB\linesearch.c" />
+    <ClCompile Include="..\Library\LBFGSB\linpack.c" />
+    <ClCompile Include="..\Library\LBFGSB\miniCBLAS.c" />
+    <ClCompile Include="..\Library\LBFGSB\print.c" />
+    <ClCompile Include="..\Library\LBFGSB\subalgorithms.c" />
+    <ClCompile Include="..\Library\LBFGSB\timer.c" />
+    <ClCompile Include="bayesiandialog.cpp" />
+    <ClCompile Include="Bayesian\kfmrf.cpp" />
+    <ClCompile Include="Bayesian\lmcurve.c" />
+    <ClCompile Include="Bayesian\lmmin.c" />
+    <ClCompile Include="Bayesian\main.cpp" />
+    <ClCompile Include="Bayesian\moc_kgrabwnd.cpp" />
+    <ClCompile Include="Bayesian\mpfit.c" />
+    <ClCompile Include="bccrdialog.cpp" />
+    <ClCompile Include="CVPrj.cpp" />
+    <ClCompile Include="dcp.cpp" />
+    <ClCompile Include="klabel.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="moc_bayesiandialog.cpp" />
+    <ClCompile Include="moc_bccrdialog.cpp" />
+    <ClCompile Include="moc_klabel.cpp" />
+    <ClCompile Include="moc_KRunBayesian.cpp" />
+    <ClCompile Include="moc_KRunBCCR.cpp" />
+    <ClCompile Include="moc_KRunDarkChannal.cpp" />
+    <ClCompile Include="moc_KWorker.cpp" />
+    <ClCompile Include="moc_mainwindow.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
